@@ -3,7 +3,7 @@ import { Pet } from './pet'
 export interface Tutor {
     id: number;
     name: string;
-    nickname: string;
-    birthdate: string;
+    nickName: string;
+    birthDate: string;
     pets: Pet[];
 }
