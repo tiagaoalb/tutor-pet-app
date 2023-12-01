@@ -6,15 +6,29 @@ body {
 }
 
 nav {
+    align-items: center;
     background-color: #048243;
     border-bottom: 3px solid #32bf84;
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: 700;
     height: 60px;
-    width: 100%;
+    justify-content:space-between;
+    padding: 0 30px;
+}
+
+.search-box {
+    border-radius: 5px;
+    border: 1px solid #32bf84;
+    height: 25px;
+}
+
+.add-tutor {
+    background-color: #CAFFFB;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem ;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 div {
