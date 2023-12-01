@@ -1,9 +1,15 @@
-<nav>Tutor + Pet App</nav>
+<nav>
+    <h1>Tutor + Pet App</h1>
+    <input type="text" placeholder="Search" class="search-box" />
+    <button type="submit" class="add-tutor" (click)="openTutorModal()">Add tutor</button>
+</nav>
 
 <div class="tutor-cards-container">
     <div *ngFor="let tutor of tutors" class="tutor-card">
         <div class="tutor-container">
             <p>Tutor: {{ tutor.name }}</p>
+            <p>NickName: {{ tutor.nickName }}</p>
+            <p>BirthDate: {{ tutor.birthDate | date : 'dd/MM/yyyy' }}</p>
             <p>Pets:</p>
             <ul *ngFor="let pet of tutor.pets">
                 <li>
