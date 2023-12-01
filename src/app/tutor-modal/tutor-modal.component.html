@@ -1,0 +1,48 @@
+<div class="modal-header">
+    <h4 class="modal-title">Add Tutor</h4>
+    <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        (click)="activeModal.dismiss()"
+    >
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form>
+        <label for="name">Name</label>
+        <input type="text" ngModel name="name" class="form-control" placeholder="Name" required/>
+        <label for="nickName">Nick Name</label>
+        <input type="text" ngModel name="nickName" class="form-control" placeholder="Nick Name" required/>
+        <label for="birthDate">Birth Date</label>
+        <input type="text" ngModel name="birthDate" class="form-control" placeholder="Birth Date" required/>
+        <h4>Pets</h4>
+        <label for="name">Pet Name</label>
+        <input type="text" ngModel name="name" class="form-control" placeholder="Pet Name" required/>
+        <label for="petBreed">Pet Breed</label>
+        <input type="text" ngModel name="petBreed" class="form-control" placeholder="Pet Breed" required/>
+        <label for="birthDate">Pet Birth Date</label>
+        <input type="text" ngModel name="birthDate" class="form-control" placeholder="Pet Birth Date" required/>
+        <label for="color">Pet Color</label>
+        <input type="text" ngModel name="color" class="form-control" placeholder="Pet Color" required/>
+        <label for="weight">Pet Weight</label>
+        <input type="text" ngModel name="weight" class="form-control" placeholder="Pet Weight" required/>
+        <label for="vaccineDate">Vaccine Date</label>
+        <input type="text" ngModel name="vaccineDate" class="form-control" placeholder="Vaccine Date" required/>
+        <label for="vaccineType">Vaccine Type</label>
+        <input type="text" ngModel name="vaccineType" class="form-control" placeholder="Vaccine Type" required/>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="submit" class="btn btn-primary">
+        Save changes
+    </button>
+    <button
+        type="button"
+        class="btn btn-secondary"
+        (click)="activeModal.dismiss()"
+    >
+        Close
+    </button>
+</div>
